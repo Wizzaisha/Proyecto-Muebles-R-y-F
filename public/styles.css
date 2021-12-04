@@ -1,0 +1,367 @@
+body {
+    font-family: "Montserrat";
+    background-color: #f0e9d2;
+  }
+  
+  hr {
+    color: #181d31;
+    margin: 0;
+  }
+  
+  /* Encabezado */
+  
+  #titulo {
+    background-color: #181d31;
+    text-align: center;
+  }
+  
+  .container-fluid{
+    padding: 2% 3%;
+  }
+  
+  .navbar-brand {
+    font-family: "Tangerine", cursive;
+    font-size: 3.5rem;
+    color: #f4f6fc;
+    margin: 0 90px 0 0;
+  }
+  
+  
+  .search-bar {
+    background-color: #f0e9d2;
+    width: 500px;
+    margin-left: 30px;
+  }
+  
+  .search-button {
+    border-color: #f0e9d2;
+  }
+  
+  .search-button svg {
+    width: 40px;
+    height: 40px;
+    color: #f0e9d2;
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+    color: #f4f6fc;
+  }
+  
+  .head-images {
+    width: 70px;
+    height: 70px;
+    color: #f0e9d2;
+  }
+  
+  /* Filtros */
+  
+  #filtros-productos {
+    background-color: #181d31;
+  }
+  
+  #filtros-productos hr {
+    color: #f0e9d2;
+    margin: 0;
+  }
+  
+  .container-buttons {
+    padding: 1% 3%;
+  }
+  
+  .div-button {
+    padding: 0;
+  }
+  
+  .filtros {
+    border-color: #f0e9d2;
+    color: #f4f6fc;
+    width: 100%;
+  
+  }
+  
+  .btn-group {
+    width: 100%;
+  }
+  
+  /* Carrusel ofertas */
+  #ofertas {
+    text-align: center;
+    padding: 2% 7%;
+    background-color: #f0e9d2;
+    
+  }
+  
+  .carousel {
+    background-color: #181d31;
+  }
+  
+  .carousel-item {
+    padding: 5%;
+  }
+  
+  .carousel-image {
+    width: 80%;
+    height: 600px;
+    opacity: 0.5;
+  }
+  
+  .ofertas-title {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-top: 3%;
+  }
+  
+  .ofertas-text {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  
+  /* Conoce mas */
+  #conoce-mas {
+    text-align: center;
+  
+    background-color: #f0e9d2;
+    color: #181d31;
+    padding: 0 3% 5%;
+  }
+  
+  
+  .conocemas-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 5% 4%;
+  }
+  .conocemas-button {
+    width: 35%;
+    padding: 2%;
+    font-size: 2rem;
+    background-color: #181d31;
+    color: #f4f6fc;
+  }
+  
+  /* Pie de pagina */
+  #footer {
+    background-color: #181d31;
+    color: #f4f6fc;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  #footer .container-fluid {
+    padding-bottom: 0;
+  }
+  
+  .suscribe {
+    margin-top: 2%;
+  }
+  .suscribe-input {
+    margin-top: 20%;
+    background-color: #f0e9d2;
+    color: #181d31;
+  }
+  
+  .footer-title {
+    font-weight: 600;
+  }
+  .help {
+    padding: 2%;
+  }
+  .help-text {
+    text-align: left;
+    margin-top: 10%;
+  }
+  
+  .medio-pago {
+    padding: 2%;
+  }
+  .footer-logo {
+    margin-top: 10%;
+    width: 20%;
+    height: 3rem;
+    padding: 2%;
+  }
+  
+  .admin {
+    padding: 7% 2%;
+  }
+  .admin-button {
+    margin-top: 10%;
+    background-color: #f0e9d2;
+    width: 60%;
+  }
+  
+  /* LOGIN CSS */
+  #login {
+    padding: 5% 7%;
+    color: #f4f6fc;
+  }
+  
+  .login-elements {
+    background-color: #181d31;
+  }
+  
+  .login-elements hr {
+    color: #f0e9d2;
+  }
+  
+  .login-button {
+    border-color: #f0e9d2;
+    color: #f4f6fc;
+    text-align: center;
+  }
+  
+  .login-text {
+    text-align: center;
+    color: #f4f6fc;
+  }
+  
+  .login-links {
+    margin: 1%;
+  }
+  
+  .login-links p {
+    margin-top: 2%;
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .volver-login {
+    margin-top: 3%;
+  }
+  
+  /* REGISTRO CSS */
+  #registro {
+    padding: 5% 7%;
+    color: #f4f6fc;
+  }
+  .registro-elements {
+    background-color: #181d31;
+    padding: 6%;
+  }
+  .registro-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 15% 0;
+  }
+  
+  .volver-registro {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+  
+  /* PRODUCTOS CSS */
+  .cards-div {
+    padding: 2% 3%;
+    text-align: center;
+  }
+  .catalogo-cards {
+    background-color: #181d31;
+    color: #f4f6fc;
+  }
+  .card-body {
+    padding: 5% 5%;
+  }
+  .image-muebles {
+    padding: 5% 5% 0 5%;
+    height: 300px;
+  }
+  .comprar-button {
+    width: 100%;
+  }
+  .detalles-button {
+    width: 100%;
+  }
+  
+
+  /* Lista de productos */
+  #listaproductos {
+    padding: 5%;
+    text-align: center;
+  }
+  .titulo-tabla {
+    text-align: center;
+  }
+
+
+  /* Control productos */
+  #controlProductos {
+    background-color: #181d31;
+    color: #f4f6fc;
+    margin: 6% 20% 0;
+    border-radius: 1rem;
+  }
+
+  .controlElementos{
+    padding: 2% 5% 0;
+  }
+
+  .controlbutton{
+    margin: 4% 35% 4%;
+    border-color: #f0e9d2;
+    color: #f4f6fc;
+    text-align: center;
+    width: 30%;
+  }
+
+  /* Autorizacion */
+  .autorizacion {
+    text-align: center;
+    background-color: #f0e9d2;
+    color: #f4f6fc;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  .admin-link {
+    padding: 20%;
+  }
+  
+  
+  @media (max-width: 1300px) {
+    .navbar-brand {
+      margin: 0;
+    }
+    .search-bar {
+      width: 200px;
+    }
+    #ofertas {
+      padding: 10% 1%;
+    }
+  }
+  @media (max-width: 600px) {
+  
+    .ofertas-title {
+      font-size: 1rem;
+    }
+    .ofertas-text {
+      font-size: 1.2rem;
+    }
+    .conocemas-button {
+      width: 80%;
+    }
+    .help-text {
+      text-align: center;
+    }
+    .footer-title {
+      padding: 5% 2% 0 2%;
+    }
+    .suscribe-input {
+      margin-top: 4%;
+    }
+    .login-input {
+      margin-top: 10%;
+    }
+    .controlbutton {
+      margin: 4% 0% 4% 10%;
+      width: 80%;
+    }
+    #controlProductos {
+      margin: 4% 4%;
+    }
+  }
+  

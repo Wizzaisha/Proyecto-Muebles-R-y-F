@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Elementoslita from "./Elementoslista";
 import axios from "axios";
 
 
-function Listaproductos(){
+function Listaproductos(props){
 
     // Obtencion de los datos desde axios
     const [lista, setLista] = useState([]);
@@ -32,13 +32,21 @@ function Listaproductos(){
     })
 
 
-    // Axios para la obtencion de datos
-    axios.get("http://localhost:5000/listaproductos")
-    .then(function(res){
-        setLista(res.data)
-    })
-    .catch(function (err){
-        console.log(err)
+    useEffect(() => {
+        // Axios para la obtencion de datos
+        axios({
+            method: "get",
+            url: "http://localhost:5000/listaproductos",
+            headers: {"x-access-token": props.tokenUsuario}
+        })
+        .then(function(res){
+            setLista(res.data)
+        })
+        .catch(function (err){
+            console.log(err)
+        });
+
+
     });
 
     // Funciones para modificar

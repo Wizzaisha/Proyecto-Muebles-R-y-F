@@ -8,7 +8,8 @@ import {verificarToken, isAdmin} from "./middlewares/authjwt.js";
 import home from "./routes/home.route.js";
 import productos from "./routes/productos.route.js";
 import usuario from "./routes/usuario.route.js";
-import listaProductos from "./routes/listaproductos.route.js"
+import listaProductos from "./routes/listaproductos.route.js";
+import verificarUsuario from "./routes/verificarUsuario.route.js"
 
 const app = express();
 
@@ -22,7 +23,8 @@ app.use(express.json());
 app.use("/", home);
 app.use("/productos", productos);
 app.use("/usuario", usuario);
-app.use("/listaproductos", [verificarToken, isAdmin], listaProductos);
+app.use("/verificarusuario", verificarUsuario);
+app.use("/listaproductos", listaProductos);
 app.use("*", function (req, res){
     res.status(404).json({error: "Pagina no encontrada"});
 });

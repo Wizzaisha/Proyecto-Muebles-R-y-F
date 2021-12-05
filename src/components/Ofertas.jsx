@@ -1,29 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Conocemas from "./Conocemas";
 import { useState } from "react";
 import axios from "axios";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import _ from "lodash";
 
-
 function Ofertas(){
     
     // Obtencion de los datos desde axios
     const [lista, setLista] = useState([]);
 
+    useEffect(() => {
+          // Axios para la obtencion de datos
+        axios.get("http://localhost:5000/productos")
+        .then(function(res){
+            setLista(res.data)
+        })
+        .catch(function (err){
+            console.log(err)
+        });  
+    }, []);
     
-    // Axios para la obtencion de datos
-    axios.get("http://localhost:5000/productos")
-    .then(function(res){
-        setLista(res.data)
-    })
-    .catch(function (err){
-        console.log(err)
-    });
+
+
 
     return (
-
-        
 
         <section id="ofertas">
 
@@ -49,16 +50,6 @@ function Ofertas(){
                     );
                 })}
             </Carousel>
-                    {/* {lista.map((elemento, index) => {
-                        return (
-                        _.lowerCase(elemento.oferta) === "si" && 
-                            <div className="carousel-item" >
-                                <img  className="carousel-image" alt="mueble1"></img>
-                                <h2 className="ofertas-title"></h2>
-                                <p className="ofertas-text"></p>
-                            </div>
-                        );
-                    })} */}
             
             <Conocemas />
         </section>    

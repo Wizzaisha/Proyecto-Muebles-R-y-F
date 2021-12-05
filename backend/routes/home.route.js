@@ -5,6 +5,9 @@ const router = express.Router();
 
 
 router.route("/").get(function (req, res){
+
+
+
     const role1 = new Role({
         name: "user"
     });
@@ -29,9 +32,21 @@ router.route("/").get(function (req, res){
                     console.log("Los roles se han añadido correctamente")
                 }
             });
+        } else {
+            res.json({message: "Bienvenido al server de la pagina muebles R y F",
+            navegacion: {
+                home: "'/' es la ruta de home",
+                productos: "'/productos' es la ruta donde se encuentran los productos que visualizan los usuarios.",
+                listaproductos: "'/listaproductos' es la ruta donde se puede eliminar, modificar y agregar productos.",
+                usuario: "'/usuario' es la ruta donde se gestiona todo lo relacionado a los usuarios, login y registro"
+            }});
         }
-    })
+    });
+
+    
+
 });
 
+    
 
 export default router;

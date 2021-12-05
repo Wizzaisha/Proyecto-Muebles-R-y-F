@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Conocemas(){
+function Conocemas(props){
 
 
     return (
@@ -10,11 +10,12 @@ function Conocemas(){
             <div className="container-fluid">
                 <h2 className="conocemas-title">Conoce más sobre nuestros productos</h2>
                 <Link to="/productos">
-                    <button 
+                    <button
+                        onClick={props.irACatalogo} 
                         type="submit"
                         name="button" 
                         className="btn btn-light conocemas-button"
-                        >Catálogo
+                        >Catálogo 
                     </button>
                 </Link>
             </div>

@@ -308,18 +308,25 @@ body {
     width: 30%;
   }
 
-  /* Autorizacion */
-  .autorizacion {
-    text-align: center;
-    background-color: #f0e9d2;
+  /* Logout */
+  .welcome-login{
     color: #f4f6fc;
-    font-size: 1rem;
-    margin-bottom: 5%;
+    background-color: #181d31;
+    margin: 5% 20%;
+    padding: 5% 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .welcome-title {
+    font-size: 3rem;
+    font-weight: 700;
   }
 
-  .admin-link {
-    padding: 20%;
+  .logout-button {
+    margin-top: 5%;
+    width: 20%;
   }
+
   
   
   @media (max-width: 1300px) {

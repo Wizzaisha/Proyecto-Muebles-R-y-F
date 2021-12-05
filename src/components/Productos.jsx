@@ -17,7 +17,6 @@ function Productos(props){
         console.log(err)
     });
 
-
     return (
         <section id="catalogo">
             <div className="container-fluid">

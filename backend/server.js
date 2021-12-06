@@ -24,7 +24,7 @@ app.use("/", home);
 app.use("/productos", productos);
 app.use("/usuario", usuario);
 app.use("/verificarusuario", verificarUsuario);
-app.use("/listaproductos", listaProductos);
+app.use("/listaproductos", [verificarToken, isAdmin],listaProductos);
 app.use("*", function (req, res){
     res.status(404).json({error: "Pagina no encontrada"});
 });

@@ -17,9 +17,13 @@ connection.once("open", () => {
 
 
 
-// Puerto del server
-const port = process.env.PORT || 4000;
+// Listening on port
 
-app.listen(port, () => {
-    console.log("El servidor esta funcionando en el puerto " + port);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
+
+app.listen(port, function(){
+  console.log("Server has started succesfully.");
 });

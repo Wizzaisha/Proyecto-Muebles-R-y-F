@@ -1,0 +1,2 @@
+https://murmuring-earth-03743.herokuapp.com/
+NOTA: Realice el despliegue del frontend de la pagina por Heroku ya que se me presentaron muchos problemas con Dockers y otras plataformas de despliegue y la unica que me funciono bien fue Heroku.
